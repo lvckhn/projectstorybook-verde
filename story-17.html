@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A group of old friends celebrates New Year at a remote Scottish lodge, and by the end of the trip, one of them is dead.">
+  <title>The Hunting Party · Serene Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="story-page">
+  <div id="progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Serene Library</a>
+    <div class="header-right">
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stories.html" class="active" aria-current="page">Stories</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="reader">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="stories.html">Stories</a> / Thriller / The Hunting Party</nav>
+      <header class="book-head">
+        <img class="book-cover" src="images/the-hunting-party.jpg" alt="Cover of The Hunting Party">
+        <div class="book-info">
+          <h1>The Hunting Party</h1>
+          <p class="meta"><span>By Lucy Foley</span> <span aria-hidden="true">·</span> <span>Thriller</span></p>
+          <section class="synopsis-box" aria-label="Synopsis">
+            <h2>Synopsis</h2>
+            <p>A group of old friends celebrates New Year at a remote Scottish lodge, and by the end of the trip, one of them is dead.</p>
+          </section>
+          <button class="like-btn" type="button" data-like="17" aria-pressed="false">&#9825; Like</button>
+        </div>
+      </header>
+      <section class="chapter" aria-label="Chapter">
+        <h2>Snow at the Lodge</h2>
+        <p class="label">Summary of chapter 1</p>
+        <div class="text">
+          <p>The story opens in a remote Scottish lodge on January 2nd, with a snowstorm raging. Heather, who works at the lodge, sees the gamekeeper stagger toward her through the snow, pale with shock. He tells her he has found the missing guest, and that it is a body.</p>
+          <p>It then jumps back three days. Emma is on a train to the Scottish Highlands with a group of old university friends for their yearly New Year’s getaway, which she has planned in detail. She is the newest member of the group and is eager to finally feel accepted.</p>
+          <p>A seating mix-up leaves one friend, Katie, alone in another carriage, and the charming Miranda smooths it over. Emma notices the tensions and old closeness among the friends, and hopes the trip will make her belong.</p>
+        </div>
+      </section>
+      <div class="reader-nav"><a class="btn ghost" href="stories.html#genre-thriller" data-back>Back to Thriller section</a></div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>Serene Library · Read slowly, dream softly.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

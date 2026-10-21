@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A woman desperate for work takes a live-in job with a wealthy family, and soon suspects that the house is hiding something.">
+  <title>The Housemaid · Serene Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="story-page">
+  <div id="progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Serene Library</a>
+    <div class="header-right">
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stories.html" class="active" aria-current="page">Stories</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="reader">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="stories.html">Stories</a> / Thriller / The Housemaid</nav>
+      <header class="book-head">
+        <img class="book-cover" src="images/the-housemaid.jpg" alt="Cover of The Housemaid">
+        <div class="book-info">
+          <h1>The Housemaid</h1>
+          <p class="meta"><span>By Freida McFadden</span> <span aria-hidden="true">·</span> <span>Thriller</span></p>
+          <section class="synopsis-box" aria-label="Synopsis">
+            <h2>Synopsis</h2>
+            <p>A woman desperate for work takes a live-in job with a wealthy family, and soon suspects that the house is hiding something.</p>
+          </section>
+          <button class="like-btn" type="button" data-like="18" aria-pressed="false">&#9825; Like</button>
+        </div>
+      </header>
+      <section class="chapter" aria-label="Chapter">
+        <h2>The Attic Room</h2>
+        <p class="label">Summary of chapter 1</p>
+        <div class="text">
+          <p>Millie is interviewing for a live-in housekeeping job with Nina Winchester, a wealthy and chatty woman in a huge house. Millie is living in her car, has a doctored résumé and doesn’t expect to get hired.</p>
+          <p>Nina gives her a detailed tour, ending with a small attic room reached by a dark staircase and a very thick door. Millie feels uneasy about its remote window, but tells herself she would be lucky to live there. She also meets Nina’s unsettling young daughter, Cecelia.</p>
+          <p>Nina promises to call, but Millie is sure a background check will end her chances.</p>
+        </div>
+      </section>
+      <div class="reader-nav"><a class="btn ghost" href="stories.html#genre-thriller" data-back>Back to Thriller section</a></div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>Serene Library · Read slowly, dream softly.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

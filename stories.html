@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse 30 stories across Romance, Fantasy, Thriller and Action.">
+  <title>Stories · Serene Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="stories-page">
+  <div id="progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Serene Library</a>
+    <div class="header-right">
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stories.html" class="active" aria-current="page">Stories</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="section-head">
+      <h1 class="page-title">Stories</h1>
+      <p>30 books across 4 genres, choose what genre you're feeling right now</p>
+    </header>
+    <div class="chips" role="group" aria-label="Jump to genre"><button class="chip" type="button" data-jump="romance">Romance</button><button class="chip" type="button" data-jump="fantasy">Fantasy</button><button class="chip" type="button" data-jump="thriller">Thriller</button><button class="chip" type="button" data-jump="action">Action</button></div>
+      <section class="genre" id="genre-romance" aria-labelledby="h-romance">
+        <header class="section-head">
+          <h2 id="h-romance">Romance</h2>
+          <p>Soft, sweet tales of two hearts finding each other. (8 books)</p>
+        </header>
+        <div class="story-grid">
+          <article class="story-card">
+            <img class="cover cover-img" src="images/im-in-love-with-the-villainess.jpg" alt="Cover of I&#x27;m in Love with the Villainess" loading="lazy">
+            <h3>I&#x27;m in Love with the Villainess</h3>
+            <p class="byline">By Inori</p>
+            <button class="syn-toggle" type="button" data-syn="1" aria-expanded="false" aria-controls="syn-1">Show synopsis</button>
+            <p class="synopsis" id="syn-1" hidden>An overworked office worker is reincarnated as the heroine of her favorite otome game, and promptly falls for its villainess.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-1.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="1" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/love-on-the-brain.jpg" alt="Cover of Love on the Brain" loading="lazy">
+            <h3>Love on the Brain</h3>
+            <p class="byline">By Ali Hazelwood</p>
+            <button class="syn-toggle" type="button" data-syn="2" aria-expanded="false" aria-controls="syn-2">Show synopsis</button>
+            <p class="synopsis" id="syn-2" hidden>A gifted neuroscientist lands her dream NASA project, only to find that her co-lead is the academic rival she can’t stand.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-2.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="2" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/its-a-love-story.jpg" alt="Cover of It&#x27;s a Love Story" loading="lazy">
+            <h3>It&#x27;s a Love Story</h3>
+            <p class="byline">By Annabel Monaghan</p>
+            <button class="syn-toggle" type="button" data-syn="3" aria-expanded="false" aria-controls="syn-3">Show synopsis</button>
+            <p class="synopsis" id="syn-3" hidden>A Hollywood executive has to team up with a cinematographer she can’t stand to turn a script she loves into a real movie.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-3.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="3" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/twisted-love.jpg" alt="Cover of Twisted Love" loading="lazy">
+            <h3>Twisted Love</h3>
+            <p class="byline">By Ana Huang</p>
+            <button class="syn-toggle" type="button" data-syn="4" aria-expanded="false" aria-controls="syn-4">Show synopsis</button>
+            <p class="synopsis" id="syn-4" hidden>A kind-hearted photography student and her brother’s ice-cold best friend slowly discover that they have more in common than they thought.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-4.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="4" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/the-friend-zone.jpg" alt="Cover of The Friend Zone" loading="lazy">
+            <h3>The Friend Zone</h3>
+            <p class="byline">By Abby Jimenez</p>
+            <button class="syn-toggle" type="button" data-syn="5" aria-expanded="false" aria-controls="syn-5">Show synopsis</button>
+            <p class="synopsis" id="syn-5" hidden>Two close friends start to fall for each other, but one of them is hiding a secret that could keep them apart.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-5.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="5" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/she-gets-the-girl.jpg" alt="Cover of She Gets the Girl" loading="lazy">
+            <h3>She Gets the Girl</h3>
+            <p class="byline">By Rachael Lippincott and Alyson Derrick</p>
+            <button class="syn-toggle" type="button" data-syn="6" aria-expanded="false" aria-controls="syn-6">Show synopsis</button>
+            <p class="synopsis" id="syn-6" hidden>Two college girls who seem like total opposites form an unexpected friendship that turns into something more.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-6.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="6" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/this-time-its-real.jpg" alt="Cover of This Time It&#x27;s Real" loading="lazy">
+            <h3>This Time It&#x27;s Real</h3>
+            <p class="byline">By Ann Liang</p>
+            <button class="syn-toggle" type="button" data-syn="7" aria-expanded="false" aria-controls="syn-7">Show synopsis</button>
+            <p class="synopsis" id="syn-7" hidden>A teenager invents a boyfriend for a school essay, and suddenly that pretend romance has to become a real one.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-7.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="7" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/god-of-ruin.jpg" alt="Cover of God of Ruin" loading="lazy">
+            <h3>God of Ruin</h3>
+            <p class="byline">By Rina Kent</p>
+            <button class="syn-toggle" type="button" data-syn="8" aria-expanded="false" aria-controls="syn-8">Show synopsis</button>
+            <p class="synopsis" id="syn-8" hidden>A girl bent on revenge sneaks into a secret club’s masked party to take down the man she blames for her brother’s injury.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-8.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="8" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="genre" id="genre-fantasy" aria-labelledby="h-fantasy">
+        <header class="section-head">
+          <h2 id="h-fantasy">Fantasy</h2>
+          <p>Dragons, giants and floating towns. (8 books)</p>
+        </header>
+        <div class="story-grid">
+          <article class="story-card">
+            <img class="cover cover-img" src="images/into-the-drowning-deep.jpg" alt="Cover of Into the Drowning Deep" loading="lazy">
+            <h3>Into the Drowning Deep</h3>
+            <p class="byline">By Mira Grant</p>
+            <button class="syn-toggle" type="button" data-syn="9" aria-expanded="false" aria-controls="syn-9">Show synopsis</button>
+            <p class="synopsis" id="syn-9" hidden>A young marine biologist joins a risky expedition to find out what really happened to a missing ship, and to prove that the ocean still holds secrets.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-9.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="9" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/the-hunters-gonna-lay-low.jpg" alt="Cover of The Hunter&#x27;s Gonna Lay Low" loading="lazy">
+            <h3>The Hunter&#x27;s Gonna Lay Low</h3>
+            <p class="byline">By Baek Sam</p>
+            <button class="syn-toggle" type="button" data-syn="10" aria-expanded="false" aria-controls="syn-10">Show synopsis</button>
+            <p class="synopsis" id="syn-10" hidden>A powerful hunter hides his strength and tries to live a quiet life, even as monsters keep slipping into his city.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-10.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="10" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/the-swordmasters-son.jpg" alt="Cover of The Swordmaster&#x27;s Son" loading="lazy">
+            <h3>The Swordmaster&#x27;s Son</h3>
+            <p class="byline">By Emperor Penguin</p>
+            <button class="syn-toggle" type="button" data-syn="11" aria-expanded="false" aria-controls="syn-11">Show synopsis</button>
+            <p class="synopsis" id="syn-11" hidden>A man who died as the weakest of a legendary sword family is reborn as a child, determined to do everything differently.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-11.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="11" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/abyssal-awakening.jpg" alt="Cover of Abyssal Awakening" loading="lazy">
+            <h3>Abyssal Awakening</h3>
+            <p class="byline">By Reili</p>
+            <button class="syn-toggle" type="button" data-syn="12" aria-expanded="false" aria-controls="syn-12">Show synopsis</button>
+            <p class="synopsis" id="syn-12" hidden>A noblewoman kept locked away for years of experiments is offered a way out, with a price attached.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-12.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="12" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/turning.jpg" alt="Cover of Turning" loading="lazy">
+            <h3>Turning</h3>
+            <p class="byline">By Kuyu</p>
+            <button class="syn-toggle" type="button" data-syn="13" aria-expanded="false" aria-controls="syn-13">Show synopsis</button>
+            <p class="synopsis" id="syn-13" hidden>A commander executed as a traitor for warning the world about its collapse wakes up years in the past with a second chance.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-13.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="13" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/the-regressor-and-the-blind-saintess.jpg" alt="Cover of The Regressor and the Blind Saintess" loading="lazy">
+            <h3>The Regressor and the Blind Saintess</h3>
+            <p class="byline">By Papapa</p>
+            <button class="syn-toggle" type="button" data-syn="14" aria-expanded="false" aria-controls="syn-14">Show synopsis</button>
+            <p class="synopsis" id="syn-14" hidden>A battered fighter and a saint who secretly gave up her powers meet in the slums and slowly come to trust each other.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-14.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="14" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/the-villainess-reverses-the-hourglass.jpg" alt="Cover of The Villainess Reverses the Hourglass" loading="lazy">
+            <h3>The Villainess Reverses the Hourglass</h3>
+            <p class="byline">By 산소미</p>
+            <button class="syn-toggle" type="button" data-syn="15" aria-expanded="false" aria-controls="syn-15">Show synopsis</button>
+            <p class="synopsis" id="syn-15" hidden>A girl condemned as a villain returns to the past, determined to take revenge on the sister who framed her.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-15.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="15" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/the-name-of-the-wind.jpg" alt="Cover of The Name of the Wind" loading="lazy">
+            <h3>The Name of the Wind</h3>
+            <p class="byline">By Patrick Rothfuss</p>
+            <button class="syn-toggle" type="button" data-syn="16" aria-expanded="false" aria-controls="syn-16">Show synopsis</button>
+            <p class="synopsis" id="syn-16" hidden>A legendary figure, now living quietly as an innkeeper, finally tells the true story of his life.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-16.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="16" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="genre" id="genre-thriller" aria-labelledby="h-thriller">
+        <header class="section-head">
+          <h2 id="h-thriller">Thriller</h2>
+          <p>Mysteries, missing clues and midnight secrets. (7 books)</p>
+        </header>
+        <div class="story-grid">
+          <article class="story-card">
+            <img class="cover cover-img" src="images/the-hunting-party.jpg" alt="Cover of The Hunting Party" loading="lazy">
+            <h3>The Hunting Party</h3>
+            <p class="byline">By Lucy Foley</p>
+            <button class="syn-toggle" type="button" data-syn="17" aria-expanded="false" aria-controls="syn-17">Show synopsis</button>
+            <p class="synopsis" id="syn-17" hidden>A group of old friends celebrates New Year at a remote Scottish lodge, and by the end of the trip, one of them is dead.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-17.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="17" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/the-housemaid.jpg" alt="Cover of The Housemaid" loading="lazy">
+            <h3>The Housemaid</h3>
+            <p class="byline">By Freida McFadden</p>
+            <button class="syn-toggle" type="button" data-syn="18" aria-expanded="false" aria-controls="syn-18">Show synopsis</button>
+            <p class="synopsis" id="syn-18" hidden>A woman desperate for work takes a live-in job with a wealthy family, and soon suspects that the house is hiding something.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-18.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="18" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/a-good-girls-guide-to-murder.jpg" alt="Cover of A Good Girl&#x27;s Guide to Murder" loading="lazy">
+            <h3>A Good Girl&#x27;s Guide to Murder</h3>
+            <p class="byline">By Holly Jackson</p>
+            <button class="syn-toggle" type="button" data-syn="19" aria-expanded="false" aria-controls="syn-19">Show synopsis</button>
+            <p class="synopsis" id="syn-19" hidden>A determined student investigates a closed murder case for a school project and starts to uncover the truth.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-19.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="19" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/gone-girl.jpg" alt="Cover of Gone Girl" loading="lazy">
+            <h3>Gone Girl</h3>
+            <p class="byline">By Gillian Flynn</p>
+            <button class="syn-toggle" type="button" data-syn="20" aria-expanded="false" aria-controls="syn-20">Show synopsis</button>
+            <p class="synopsis" id="syn-20" hidden>On their anniversary, a man’s wife disappears, and as the search goes on, he becomes the main suspect.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-20.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="20" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/final-girls.jpg" alt="Cover of Final Girls" loading="lazy">
+            <h3>Final Girls</h3>
+            <p class="byline">By Riley Sager</p>
+            <button class="syn-toggle" type="button" data-syn="21" aria-expanded="false" aria-controls="syn-21">Show synopsis</button>
+            <p class="synopsis" id="syn-21" hidden>The survivor of a massacre has built a quiet life, until news of another survivor’s death threatens to drag her past back.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-21.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="21" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/the-day-of-the-jackal.jpg" alt="Cover of The Day of the Jackal" loading="lazy">
+            <h3>The Day of the Jackal</h3>
+            <p class="byline">By Frederick Forsyth</p>
+            <button class="syn-toggle" type="button" data-syn="22" aria-expanded="false" aria-controls="syn-22">Show synopsis</button>
+            <p class="synopsis" id="syn-22" hidden>A mysterious assassin is hired to kill the French president, and one detective races to stop him.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-22.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="22" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/dark-matter.jpg" alt="Cover of Dark Matter" loading="lazy">
+            <h3>Dark Matter</h3>
+            <p class="byline">By Blake Crouch</p>
+            <button class="syn-toggle" type="button" data-syn="23" aria-expanded="false" aria-controls="syn-23">Show synopsis</button>
+            <p class="synopsis" id="syn-23" hidden>A physics professor is abducted on his way home and wakes up in a life that is almost, but not quite, his own.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-23.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="23" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="genre" id="genre-action" aria-labelledby="h-action">
+        <header class="section-head">
+          <h2 id="h-action">Action</h2>
+          <p>Races, rescues and daring escapes. (7 books)</p>
+        </header>
+        <div class="story-grid">
+          <article class="story-card">
+            <img class="cover cover-img" src="images/onyx-storm.jpg" alt="Cover of Onyx Storm" loading="lazy">
+            <h3>Onyx Storm</h3>
+            <p class="byline">By Rebecca Yarros</p>
+            <button class="syn-toggle" type="button" data-syn="24" aria-expanded="false" aria-controls="syn-24">Show synopsis</button>
+            <p class="synopsis" id="syn-24" hidden>A dragon rider and her allies race to find help against a growing enemy before the war reaches their home.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-24.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="24" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/omniscient-readers-viewpoint.jpg" alt="Cover of Omniscient Reader&#x27;s Viewpoint" loading="lazy">
+            <h3>Omniscient Reader&#x27;s Viewpoint</h3>
+            <p class="byline">By singNsong</p>
+            <button class="syn-toggle" type="button" data-syn="25" aria-expanded="false" aria-controls="syn-25">Show synopsis</button>
+            <p class="synopsis" id="syn-25" hidden>The only reader to finish a web novel finds the story’s apocalypse come true, and he is the only one who knows how it ends.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-25.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="25" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/solo-leveling.jpg" alt="Cover of Solo Leveling" loading="lazy">
+            <h3>Solo Leveling</h3>
+            <p class="byline">By Chugong</p>
+            <button class="syn-toggle" type="button" data-syn="26" aria-expanded="false" aria-controls="syn-26">Show synopsis</button>
+            <p class="synopsis" id="syn-26" hidden>The weakest hunter in a world of monster-filled gates gains a unique ability to level up on his own.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-26.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="26" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/sss-class-revival-hunter.jpg" alt="Cover of SSS-Class Revival Hunter" loading="lazy">
+            <h3>SSS-Class Revival Hunter</h3>
+            <p class="byline">By Sinnoa/Shin Noah</p>
+            <button class="syn-toggle" type="button" data-syn="27" aria-expanded="false" aria-controls="syn-27">Show synopsis</button>
+            <p class="synopsis" id="syn-27" hidden>A hunter with a rare reviving power climbs the ranks in a world full of dungeons and monsters.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-27.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="27" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/scum-villains-self-saving-system.jpg" alt="Cover of The Scum Villain&#x27;s Self-Saving System" loading="lazy">
+            <h3>The Scum Villain&#x27;s Self-Saving System</h3>
+            <p class="byline">By Mo Xiang Tong Xiu</p>
+            <button class="syn-toggle" type="button" data-syn="28" aria-expanded="false" aria-controls="syn-28">Show synopsis</button>
+            <p class="synopsis" id="syn-28" hidden>A reader who died mocking a novel wakes up inside it as the villainous master of its hero, and must change his fate before it’s too late.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-28.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="28" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/heaven-officials-blessing.jpg" alt="Cover of Heaven Official&#x27;s Blessing" loading="lazy">
+            <h3>Heaven Official&#x27;s Blessing</h3>
+            <p class="byline">By Mo Xiang Tong Xiu</p>
+            <button class="syn-toggle" type="button" data-syn="29" aria-expanded="false" aria-controls="syn-29">Show synopsis</button>
+            <p class="synopsis" id="syn-29" hidden>A god who has been banished from heaven twice crosses paths with a powerful and mysterious ghost king.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-29.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="29" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+          <article class="story-card">
+            <img class="cover cover-img" src="images/grandmaster-of-demonic-cultivation.jpg" alt="Cover of Grandmaster of Demonic Cultivation" loading="lazy">
+            <h3>Grandmaster of Demonic Cultivation</h3>
+            <p class="byline">By Mo Xiang Tong Xiu</p>
+            <button class="syn-toggle" type="button" data-syn="30" aria-expanded="false" aria-controls="syn-30">Show synopsis</button>
+            <p class="synopsis" id="syn-30" hidden>A feared cultivator is killed, then brought back years later and pulled into an old mystery alongside a stern former friend.</p>
+            <div class="card-actions">
+              <a class="btn" href="story-30.html" data-read>Read</a>
+              <button class="like-btn" type="button" data-like="30" aria-pressed="false">&#9825; Like</button>
+            </div>
+          </article>
+        </div>
+      </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Serene Library · Read slowly, dream softly.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

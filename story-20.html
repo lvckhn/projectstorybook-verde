@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="On their anniversary, a man’s wife disappears, and as the search goes on, he becomes the main suspect.">
+  <title>Gone Girl · Serene Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="story-page">
+  <div id="progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Serene Library</a>
+    <div class="header-right">
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stories.html" class="active" aria-current="page">Stories</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="reader">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="stories.html">Stories</a> / Thriller / Gone Girl</nav>
+      <header class="book-head">
+        <img class="book-cover" src="images/gone-girl.jpg" alt="Cover of Gone Girl">
+        <div class="book-info">
+          <h1>Gone Girl</h1>
+          <p class="meta"><span>By Gillian Flynn</span> <span aria-hidden="true">·</span> <span>Thriller</span></p>
+          <section class="synopsis-box" aria-label="Synopsis">
+            <h2>Synopsis</h2>
+            <p>On their anniversary, a man’s wife disappears, and as the search goes on, he becomes the main suspect.</p>
+          </section>
+          <button class="like-btn" type="button" data-like="20" aria-pressed="false">&#9825; Like</button>
+        </div>
+      </header>
+      <section class="chapter" aria-label="Chapter">
+        <h2>The Day Of</h2>
+        <p class="label">Summary of chapter 1</p>
+        <div class="text">
+          <p>On the morning of his fifth wedding anniversary, Nick Dunne wakes up thinking about his wife Amy and wondering what is going on inside her head. He explains how they moved from New York to his small Missouri hometown after both lost their jobs and his mother fell seriously ill, a move Amy resents.</p>
+          <p>Amy is downstairs making breakfast, in good spirits, but Nick is uneasy. He later heads to the bar he runs with his twin sister, bought with Amy’s money, and describes the town and its river. A feeling of being watched leaves him needing a drink.</p>
+        </div>
+      </section>
+      <div class="reader-nav"><a class="btn ghost" href="stories.html#genre-thriller" data-back>Back to Thriller section</a></div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>Serene Library · Read slowly, dream softly.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
